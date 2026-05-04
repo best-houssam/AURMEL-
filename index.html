@@ -1,1 +1,186 @@
-hftghfg
+.gallery-label {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 30px 20px 20px;
+    background: linear-gradient(to top, rgba(92,61,61,0.8), transparent);
+    color: var(--cream);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  /* Large nail art display in gallery items */
+  .gallery-nail-art {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .g-nail {
+    border-radius: 40px 40px 20px 20px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+
+  .g-nail::after {
+    content: '';
+    position: absolute;
+    top: 12px; left: 10px; right: 10px;
+    height: 45%;
+    background: rgba(255,255,255,0.35);
+    border-radius: 30px 30px 0 0;
+  }
+
+  /* ===== TESTIMONIALS ===== */
+  #testimonials {
+    background: var(--white);
+  }
+
+  .testimonials-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .testimonials-header .section-label {
+    justify-content: center;
+  }
+
+  .testimonials-header .section-label::before { display: none; }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .review-card {
+    padding: 36px;
+    background: var(--cream);
+    border: 1px solid rgba(201, 169, 110, 0.2);
+    position: relative;
+  }
+
+  .review-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    color: var(--blush);
+    line-height: 0.5;
+    margin-bottom: 20px;
+  }
+
+  .review-text {
+    font-size: 0.78rem;
+    line-height: 2;
+    color: var(--mauve);
+    font-weight: 300;
+    margin-bottom: 28px;
+    direction: rtl;
+  }
+
+  .review-stars {
+    color: var(--gold);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+
+  .reviewer-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--deep);
+  }
+
+  .reviewer-tag {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 400;
+  }
+
+  /* ===== CTA SECTION ===== */
+  #contact {
+    background: linear-gradient(135deg, var(--blush) 0%, var(--dusty-rose) 100%);
+    text-align: center;
+    padding: 120px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #contact::before {
+    content: '';
+    position: absolute;
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.2);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #contact::after {
+    content: '';
+    position: absolute;
+    width: 900px; height: 900px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.1);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #contact .section-label { justify-content: center; color: rgba(255,255,255,0.7); }
+  #contact .section-label::before { background: rgba(255,255,255,0.5); }
+  #contact .section-title { color: white; }
+  #contact .section-desc { color: rgba(255,255,255,0.75); margin: 0 auto 48px; }
+
+  .contact-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+  }
+
+  .btn-white {
+    background: white;
+    color: var(--deep);
+    text-decoration: none;
+    padding: 18px 44px;
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+
+  .btn-white:hover {
+    background: var(--deep);
+    color: white;
+  }
+
+  .btn-outline-white {
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 18px 44px;
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all 0.3s;
+  }
+
+  .btn-outline-white:hover {
+    background: white;
+    color: var(--deep);
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--deep);
+    padding: 64px 80px 40px;
+    color: var(--cream);
+  }
